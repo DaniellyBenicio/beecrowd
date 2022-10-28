@@ -1,0 +1,24 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int S, T, F;
+
+    scanf("%d", &S);
+    scanf("%d", &T);
+    scanf("%d", &F);
+
+
+    if(S+T+F>=24){
+    printf("%d\n", S+T+F-24);
+    }
+
+    if(S+T+F<0){
+    printf("%d\n", S+T+F+24);
+    }
+
+   if((S+T+F)>=0 && S+T+F<24){
+    printf("%d\n", S+T+F);
+    }
+    return 0;
+}
