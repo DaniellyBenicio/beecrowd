@@ -1,0 +1,64 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int n1, n2, n3;
+    int a; // maior
+    int b; // medio
+    int c; // menor
+    
+    scanf("%d", &n1);
+    scanf("%d", &n2);
+    scanf("%d", &n3);
+    
+    if(n1>=n2 && n1>=n3) {
+        a=n1;
+        
+        if(n2>n3){
+        b=n2;
+        c=n3;
+        }
+        if(n3>n2){
+        b=n3;
+        c=n2;
+        }
+        
+        printf("%d\n%d\n%d\n", c, b, a);
+        
+    }
+    
+    if(n2>=n1 && n2>=n3){
+        a=n2;
+        
+        if(n1>n3){
+        b=n1;
+        c=n3;
+        }
+        if(n3>n1){
+        b=n3;
+        c=n1;
+        }
+        printf("%d\n%d\n%d\n", c, b, a);
+    }
+    
+    if(n3>=n1 && n3>=n2){
+        a=n3;
+        
+        if(n1>n2){
+        b=n1;
+        c=n2;
+        }
+        if(n2>n1){
+        b=n2;
+        c=n1;
+        }
+        printf("%d\n%d\n%d\n", c, b, a);
+    }
+    
+    
+    
+    printf("\n");
+    printf("%d\n%d\n%d\n", n1, n2, n3);
+
+    return 0;
+}
