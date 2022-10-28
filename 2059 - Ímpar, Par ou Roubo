@@ -1,0 +1,30 @@
+#include <stdio.h>
+ 
+int main() {
+
+    int p,j1, j2, r, a, s;
+    scanf("%i", &p);
+    scanf("%i", &j1);
+    scanf("%i", &j2);
+    scanf("%i", &r);
+    scanf("%i", &a);
+
+    s = j1 +j2;
+    
+    if( r == 1) {
+    if( a == 1) {
+    		printf("Jogador 2 ganha!\n");	
+		} else {
+			printf("Jogador 1 ganha!\n");	
+		}
+	} else {
+		if( ( s % 2 == 0 && p == 1) || (s % 2 == 1 && p == 0) ){
+			printf("Jogador 1 ganha!\n");
+		} else {
+			printf("Jogador 2 ganha!\n");
+		}
+	}
+    
+   
+    return 0;
+}
